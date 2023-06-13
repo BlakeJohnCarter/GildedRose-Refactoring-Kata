@@ -1,0 +1,51 @@
+Approach to the coding task
+
+1. Understanding the existing system: 
+
+    - `UpdateQuality` function and the `Items` property. 
+ 
+    - Spent time understanding how the `UpdateQuality` function lowers the values of `SellIn` and `Quality` for each item in the inventory.
+
+2. Identifying item categories: 
+
+    - The inventory has four different categories of items: "Aged Brie", "Sulfuras", "Backstage passes", and "Conjured". 
+    - Each category follows different rules for adjusting their `SellIn` and `Quality` values. 
+
+3. Creating unit tests: 
+
+To safeguard against potential errors, create unit tests that cover the functionality of each item category. 
+
+    - This will include scenarios for each item's behavior before and after 
+    the `SellIn` date has passed, as well as checks to ensure `Quality` 
+    never becomes negative and never exceeds 50 (except for "Sulfuras").
+
+4. Refactoring the code: 
+
+    The `UpdateQuality` function might be 
+    complex due to the various rules for different items. (Nestling hell)
+
+    - Refactor the function by breaking it into smaller functions, each handling a specific type of item. 
+      This will improve the readability and maintainability of the code.
+    - Add some tests for each new method
+
+5. Adding functionality for Conjured items: 
+
+    - The system needs to support a new category of items called "Conjured". 
+
+    - Implement a function or set of conditions within the `UpdateQuality` method that handles "Conjured" items, taking into account that the 
+    `Quality` degrades twice as fast as normal items.
+
+6. Testing the new functionality: 
+
+    - Add unit tests specifically for "Conjured" items. Make sure the `Quality` is decreasing at 
+        the correct rate (twice as fast) and other rules are followed correctly.
+
+7. Code review and refactoring:
+
+    - Once all new functionality is implemented and all tests are passing, review the entire 
+    code for any potential improvements. Refactor where necessary 
+    to make the code cleaner, more efficient, and easier to understand.
+
+8. Documentation: 
+
+    - Finally, document your changes and write descriptive comments for the functions and complex code sections. 
