@@ -49,3 +49,13 @@ To safeguard against potential errors, create unit tests that cover the function
 8. Documentation: 
 
     - Finally, document your changes and write descriptive comments for the functions and complex code sections. 
+
+-----------------------------------
+
+Environment specifics:
+
+➜  node -v
+v11.11.0
+
+➜  nvm use 11.11.0
+Now using node v11.11.0 (npm v6.13.4)
