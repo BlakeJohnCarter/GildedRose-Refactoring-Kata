@@ -57,5 +57,5 @@ Environment specifics:
 ➜  node -v
 v11.11.0
 
-➜  nvm use 11.11.0
-Now using node v11.11.0 (npm v6.13.4)
+➜  nvm use 14
+Now using node v14.21.2 (npm v6.14.17)
